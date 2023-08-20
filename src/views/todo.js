@@ -60,7 +60,7 @@ export default function () {
     }, {
       tagName: 'ion-list',
       children: () => {
-        const filter = router.params.$filter;
+        const filter = router.query.$filter;
         return state.list.$$each(item => {
           if (filter && filter !== 'all') {
             if (item.checked && filter !== 'completed') return;

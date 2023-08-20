@@ -27,12 +27,12 @@ createView({
           tagName: 'ion-radio-group',
           value: l10n.lang,
           children: () => {
-            return Object.keys(l10n.t('languages', 'en')).map(lang => {
+            return l10n.locales.map(lang => {
               return {
                 tagName: 'ion-radio',
                 className: 'ion-padding',
                 value: lang,
-                textContent: l10n.t(`languages.${lang}`, 'en')
+                textContent: l10n.t('language', lang)
               };
             });
           },
@@ -80,4 +80,4 @@ createView({
       }];
     }
   }]
-}, document.body);
+}, { target: document.body });
