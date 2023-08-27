@@ -6,7 +6,7 @@ import router from '../router';
 const state = createState({
   list: []
 });
-const syncer = (newv, oldv, diff) => {
+const syncer = (newv, oldv) => {
   if (!oldv) {
     return JSON.parse(localStorage.getItem('todos') || '[]');
   } else {

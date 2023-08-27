@@ -9,11 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@ionic/core": "^7.3.0",
-    "eslint": "^8.47.0",
+    "@ionic/core": "^7.3.1",
+    "eslint": "^8.48.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-n": "^16.0.2",
     "eslint-plugin-promise": "^6.1.1",
     "ionicons": "^7.1.2",
     "neux": "^0.4.0",

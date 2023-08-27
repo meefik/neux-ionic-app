@@ -47,8 +47,9 @@ createView({
   }, {
     tagName: 'ion-content',
     children: () => {
-      const View = views[router.$path];
-      return View || NotFound;
+      return {
+        view: views[router.$path] || NotFound
+      };
     }
   }, {
     tagName: 'ion-footer',
